@@ -127,21 +127,96 @@
             <tr><td><Keyb labels={["Enter"]}/></td><td>nový řádek / odstavec</td></tr>
             <tr><td><Keyb labels={["Delete"]}/></td><td>výmaz znaku na kurzorem</td></tr>
             <tr><td><Keyb labels={["Back space"]}/></td><td>výmaz znaku před kurzorem</td></tr>
-            ...
+            <tr><td><Keyb labels={["Ctrl", "T"]} delims={["+"]}/></td><td>výmaz slova</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Y"]} delims={["+"]}/></td><td>výmaz řádku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Q", "Y"]} delims={["+"]}/></td><td>výmaz od kurzoru do konce řádku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "U"]} delims={["+"]}/></td><td>obnovení původního stavu</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Q", "L"]} delims={["+"]}/></td><td>obnovení řádku (jen editovaného)</td></tr>
+            <tr><td><Keyb labels={["Alt", "="]} delims={["+"]}/></td><td>ukončení editace bez uložení změn</td></tr>
+            <tr><td><Keyb labels={["F9"]}/></td><td>ulož změny</td></tr>
+            <tr><td><Keyb labels={["Esc"]}/></td><td>ukončení editace s uložením změn</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "N"]} delims={["+"]}/></td><td>vlož řádek před kurzor</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "I"]} delims={["+"]}/></td><td>tabelátor</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "J"]} delims={["+"]}/></td><td>tabelace zprava</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "C"]} delims={["+"]}/></td><td>vycentrování textu na řádku</td></tr>
+            <tr><td><Keyb labels={["F4"]}/></td><td>doplň diakritické znaménko</td></tr>
         </table>
 
         <h4>Kreslení rámečků</h4>
-        <p>Poz. Při kreslení rámečku v kódové stránce 852 nelze napojovat jednoduchou čáru na dvojitou a naopak.</p>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "Q", "-"]} delims={["+"]}/></td><td>vycentrování textu na řádku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Q", "="]} delims={["+"]}/></td><td>vycentrování textu na řádku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Q", "/"]} delims={["+"]}/></td><td>vycentrování textu na řádku</td></tr>
+        </table>
+        <p>v průběhu kreslení lze použít</p>
+        <table>
+            <tr><td><Keyb labels={["&larr;", "&rarr;", "&uarr;", "&darr;"]} delims={[", ", ", ", ", "]}/></td><td>kreslení čáry</td></tr>
+            <tr><td><Keyb labels={["-"]}/></td><td>přepni na jednoduchou čáru</td></tr>
+            <tr><td><Keyb labels={["="]}/></td><td>přepni na dvojitou čáru</td></tr>
+            <tr><td><Keyb labels={["/"]}/></td><td>přepni na mazání čáry</td></tr>
+            <tr><td><Keyb labels={[" "]}/></td><td>přepni na posun kurzoru</td></tr>
+            <tr><td><Keyb labels={["-"]}/></td><td>konec kreslení</td></tr>
+        </table>
+        <p>Pozn. Při kreslení rámečku v kódové stránce 852 nelze napojovat jednoduchou čáru na dvojitou a naopak.</p>
 
         <h4>Přepínače textového editoru</h4>
+        <table>
+            <tr><td><Keyb labels={["Insert"]}/></td><td>vkládání / přepisování znaků</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "I"]} delims={["+"]}/></td><td>odsazení zleva</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "W"]} delims={["+"]}/></td><td>automatické formátování</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "J"]} delims={["+"]}/></td><td>zarovnání vpravo při formátování</td></tr>
+            <tr><td><Keyb labels={["Alt", "F6"]} delims={["+"]}/></td><td>vyber jinou tiskárnu</td></tr>
+            <tr><td><Keyb labels={["Alt", "F8"]} delims={["+"]}/></td><td>vyber jinou klávesnici</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "N"]} delims={["+"]}/></td><td>sloupcový / běžný blok</td></tr>
+        </table>
 
         <h4>Bloky textu</h4>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "K", "B", "F7"]} delims={["+", "", ", "]}/></td><td>začátek bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "K", "F8"]} delims={["+", "", ", "]}/></td><td>konec bloku</td></tr>
+            <tr><td><Keyb labels={["Shift", "&larr;"]} delims={["+"]}/></td><td>posun začátku/konce bloku po znaku</td></tr>
+            <tr><td><Keyb labels={["Shift", "Page Up"]} delims={["+"]}/></td><td>posun začátku/konce bloku o stránku vzad</td></tr>
+            <tr><td><Keyb labels={["Shift", "Page Down"]} delims={["+"]}/></td><td>posun začátku/konce bloku o stránku vpřed</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "C"]} delims={["+"]}/></td><td>kopie bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "V"]} delims={["+"]}/></td><td>přenesení bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "Y"]} delims={["+"]}/></td><td>výmaz bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "R"]} delims={["+"]}/></td><td>načtení textového souboru</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "W"]} delims={["+"]}/></td><td>zápis bloku do textového souboru</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "P"]} delims={["+"]}/></td><td>tisk bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "F"]} delims={["+"]}/></td><td>formátování bloku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "U"]} delims={["+"]}/></td><td>změna malých písmen na velká</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "L"]} delims={["+"]}/></td><td>změna velkých písmen na malá</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "F7"]} delims={["+"]}/></td><td>kopie bloku do Clipboardu</td></tr>
+            <tr><td><Keyb labels={["Shift", "F7"]} delims={["+"]}/></td><td>kopie bloku z Clipboardu</td></tr>
+        </table>
         <p>Pozn. Clipboard je pomocná paměť pro přenos textu</p>
 
         <h4>Formátování textu</h4>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "O", "L"]} delims={["+"]}/></td><td>nastav levý okraj</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "R"]} delims={["+"]}/></td><td>nastav pravý okraj</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "W"]} delims={["+"]}/></td><td>zapni / vypni automatické formátování</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "I"]} delims={["+"]}/></td><td>zapni / vypni odsazení zleva</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "O", "J"]} delims={["+"]}/></td><td>zapni / vypni zarovnání vpravo</td></tr>
+            <tr><td><Keyb labels={["Enter"]}/></td><td>konec řádku / odstavce (tvrdý řádek)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "B"]} delims={["+"]}/></td><td>formátuj text do konce odstavce</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "F"]} delims={["+"]}/></td><td>formátuj text v označeném bloku</td></tr>
+        </table>
 
         <h4>Vyhledávání a nahrazování</h4>
-
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "Q", "F"]} delims={["+"]}/></td><td>hledání řetězce v textu</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Q", "A"]} delims={["+"]}/></td><td>hledání a nahrazení řetězce jiným řetězcem</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "L"]} delims={["+"]}/></td><td>pokračuj v hledání / nahrazení</td></tr>
+            <tr><td colspan="2">Podmínky pro hledání:</td></tr>
+            <tr><td>g</td><td>v celém úseku</td></tr>
+            <tr><td>e</td><td>globálně</td></tr>
+            <tr><td>w</td><td>hledat jen celá slova (ne složeniny)</td></tr>
+            <tr><td>~</td><td>lexikálně (hrábě = HRABE)</td></tr>
+            <tr><td>u</td><td>bez rozlišení malá / velká písmena</td></tr>
+            <tr><td>l</td><td>hledat jen v označeném bloku</td></tr>
+            <tr><td>n</td><td>nahradit bez předchozího dotazu</td></tr>
+        </table>
 
         <h3>Datový a textový editor</h3>
         <h4>Kalkulačka</h4>
