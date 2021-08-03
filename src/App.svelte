@@ -219,20 +219,122 @@
         </table>
 
         <h3>Datový a textový editor</h3>
+        <p>Pozn. Společné příkazy, které lze použít v datovém i textovém editoru</p>
         <h4>Kalkulačka</h4>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "F5"]} delims={["+"]}/></td><td>vyvolání kalkulačky na posl. řádku</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "U"]} delims={["+"]}/></td><td>obnovení posledního výpočtu</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "F4"]} delims={["+"]}/></td><td>přenos výsledku do údaje / textu</td></tr>
+        </table>
+
         <h4>Nápověda</h4>
+        <table>
+            <tr><td><Keyb labels={["F1"]}/></td><td>vyvolání nápovědy</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "F1"]} delims={["+"]}/></td><td>nápověda k aktuálnímu údaji</td></tr>
+            <tr><td><Keyb labels={["Alt", "F10"]} delims={["+"]}/></td><td>posledně vyvolaná nápověda</td></tr>
+            <tr><td colspan="2">při prohlížení lze použít:</td></tr>
+            <tr><td><Keyb labels={["&larr;", "&rarr;", "&uarr;", "&darr;"]} delims={[", ", ", ", ", "]}/></td><td>pohyb po zvýrazněných heslech</td></tr>
+            <tr><td><Keyb labels={["Enter"]}/></td><td>nápověda k aktuálnímu heslu</td></tr>
+            <tr><td><Keyb labels={["F10"]}/></td><td>předchozí zobrazená nápověda</td></tr>
+            <tr><td><Keyb labels={["F1"]}/></td><td>index nápovědy</td></tr>
+            <tr><td><Keyb labels={["F6"]}/></td><td>tisk aktuální zobrazené nápovědy</td></tr>
+            <tr><td><Keyb labels={["Esc"]}/></td><td>ukončení prohlížení nápovědy</td></tr>
+            <tr><td><Keyb labels={["Page Up"]}/></td><td>o obrazovku vzad</td></tr>
+            <tr><td><Keyb labels={["Page Down"]}/></td><td>o obrazovku vpřed</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "Home"]} delims={["+"]}/></td><td>přechod na předchozí heslo helpu</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "End"]} delims={["+"]}/></td><td>přechod na následující heslo helpu</td></tr>
+        </table>
 
         <h3>Aritmetické funkce</h3>
+        <table>
+            <tr><td>abs(ČíselnýVýraz)</td><td>absolutní hodnota</td></tr>
+            <tr><td>arctan(ČíselnýVýraz)</td><td>arcus tangens</td></tr>
+            <tr><td>cos(ČíselnýVýraz)</td><td>cosinus</td></tr>
+            <tr><td>exp(ČíselnýVýraz)</td><td>exponenciela</td></tr>
+            <tr><td>frac(ČíselnýVýraz)</td><td>desetinná část čísla</td></tr>
+            <tr><td>int(ČíselnýVýraz)</td><td>celá část čísla</td></tr>
+            <tr><td>ln(ČíselnýVýraz)</td><td>přirozený logaritmus</td></tr>
+            <tr><td>pi</td><td>Ludolfovo číslo (3.1415926536)</td></tr>
+            <tr><td>sqr(ČíselnýVýraz)</td><td>druhá mocnina</td></tr>
+            <tr><td>sqrt(ČíselnýVýraz)</td><td>druhá odmocnina</td></tr>
+            <tr><td>sin(ČíselnýVýraz)</td><td>sinus</td></tr>
+            <tr><td>random</td><td>generátor náhodných čísel &lt;0,1)</td></tr>
+        </table>
 
         <h3>Tisk textu</h3>
+        <p>Pozn. Následující příkazy jsou platné jen pro textový editor.</p>
+
         <h4>Řídící klávesy</h4>
+        <table>
+            <tr><td><Keyb labels={["F6"]}/></td><td>tisk celého textu</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "F6"]} delims={["+"]}/></td><td>tisk od pozice kurzoru do konce t.</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "K", "P"]} delims={["+"]}/></td><td>tisk označeného bloku</td></tr>
+            <tr><td><Keyb labels={["Alt", "F6"]} delims={["+"]}/></td><td>výběr jiné tiskárny</td></tr>
+            <tr><td><Keyb labels={["Esc"]}/></td><td>přerušení tisku</td></tr>
+        </table>
+
         <h4>Ovládání tiskárny</h4>
+        <p>Pozn. Těmito kombinacemi kláves se vkládají znaky do textu v místě kde je požadována příslušná činnost. Toto je v textu odlišně značeno zvýrazněnými znaky.</p>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "P", "G"]} delims={["+"]}/></td><td>zvukové znamení</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "H"]} delims={["+"]}/></td><td>zpět o 1 znak</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "L"]} delims={["+"]}/></td><td>odstránkování</td></tr>
+        </table>
+
         <h4>Tečkové příkazy</h4>
+        <p>Pozn. Tato tzv. tečková notace musí být vždy na začátku tištěného textu a každá na samostatném řádku.</p>
+        <table>
+            <tr><td>.ti n</td><td>počet výtisků (implicitně 1 výtisk)</td></tr>
+            <tr><td>.cp n</td><td>počet volných řádků na konci strany</td></tr>
+            <tr><td>.pl n</td><td>délka stránky v řádcích (impl. 72)</td></tr>
+            <tr><td>.po n</td><td>odsazení zleva (implicitně 0 znaků)</td></tr>
+            <tr><td colspan="2">parametr n je číselná hodnota</td></tr>
+            <tr><td>.ff</td><td>potlačení nastavení papíru a odstr.</td></tr>
+            <tr><td>.nm</td><td>jako .ff, na konci ale odstránkuje</td></tr>
+            <tr><td>.he text</td><td>hlavička každé strany</td></tr>
+            <tr><td>.fo text</td><td>zakončení každé strany</td></tr>
+            <tr><td colspan="2">parametr text může také obsahovat tyto masky:</td></tr>
+            <tr><td>___</td><td>maska pro vložení čísla stránky</td></tr>
+            <tr><td>__.__.__</td><td>maska pro vložení aktuál. datumu</td></tr>
+            <tr><td>__:__</td><td>maska pro vložení aktuálního času</td></tr>
+        </table>
+
         <h4>Typy písma</h4>
+        <p>Pozn. Použití a funkce těchto typů písma jsou závislé na typu tiskárny, které se ovládá pomocí EscapeSekvencí nastavených v programu FANDINST.</p>
+        <table>
+            <tr><td><Keyb labels={["Ctrl", "P", "S"]} delims={["+"]}/></td><td>podtržené písmo</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "W"]} delims={["+"]}/></td><td>kurzíva (italic - šikmé písmo)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "B"]} delims={["+"]}/></td><td>tučně (bold)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "D"]} delims={["+"]}/></td><td>dvojitě (double)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "Q"]} delims={["+"]}/></td><td>široký tisk (wide - dvojnásobná šířka)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "E"]} delims={["+"]}/></td><td>hustě (compressed 17 CPI)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "A"]} delims={["+"]}/></td><td>perlička (elite 12 CPI)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "X"]} delims={["+"]}/></td><td>vysoké znaky (dvojnásobná výška)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "V"]} delims={["+"]}/></td><td>čtyřnásobné písmo (výška i šířka)</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "P", "T"]} delims={["+"]}/></td><td>husté řádkování (8 LPI)</td></tr>
+        </table>
 
         <h3>Grafika</h3>
         <h4>Zobrazení</h4>
+        <table>
+            <tr><td><Keyb labels={["F4"]}/></td><td>inverzní zobrazení obrazovky</td></tr>
+            <tr><td><Keyb labels={["Shift", "F4"]} delims={["+"]}/></td><td>inverzní zobrazení aktuálního okna</td></tr>
+            <tr><td><Keyb labels={["&larr;", "&rarr;", "&uarr;", "&darr;"]} delims={[", ", ", ", ", "]}/></td><td>pohyb obrázku v okně</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "&larr;"]} delims={["+"]}/></td><td>o okno vlevo</td></tr>
+            <tr><td><Keyb labels={["Ctrl", "&rarr;"]} delims={["+"]}/></td><td>o okno vpravo</td></tr>
+            <tr><td><Keyb labels={["Page Up"]}/></td><td>o obrazovku nahoru</td></tr>
+            <tr><td><Keyb labels={["Page Down"]}/></td><td>o obrazovku dolů</td></tr>
+            <tr><td><Keyb labels={["Esc"]}/></td><td>ukončení zobrazení</td></tr>
+        </table>
+
         <h4>Tisk, export</h4>
+        <table>
+            <tr><td><Keyb labels={["F6"]}/></td><td>tisk obrazovky</td></tr>
+            <tr><td><Keyb labels={["Shift", "F6"]} delims={["+"]}/></td><td>tisk aktuálního okna</td></tr>
+            <tr><td><Keyb labels={["Esc"]}/></td><td>přerušení tisku</td></tr>
+            <tr><td><Keyb labels={["F9"]}/></td><td>uložení obrazovky do souboru PCX</td></tr>
+            <tr><td><Keyb labels={["Shift", "F9"]} delims={["+"]}/></td><td>uložení aktuálního okna do souboru</td></tr>
+        </table>
 
         <h3>Operátory</h3>
         <h4>Logické operátory</h4>
