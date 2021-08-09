@@ -338,11 +338,56 @@
 
         <h3>Operátory</h3>
         <h4>Logické operátory</h4>
-        <h4>Srovnávací operátory</h4>
-        <h4>Číselné operátory</h4>
-        <h4>Textové operátory</h4>
-        <h4>Priorita operátorů</h4>
+        <table>
+            <tr><td></td><td>^</td><td>Operand ... negace</td><td>ne</td></tr>
+            <tr><td>Operand</td><td>&</td><td>Operand ... konjunkce</td><td>a současně</td></tr>
+            <tr><td>Operand</td><td>|</td><td>Operand ... disjunkce</td><td>nebo</td></tr>
+            <tr><td>Operand</td><td>=&gt;</td><td>Operand ... implikace</td><td>jestliže, pak</td></tr>
+            <tr><td>Operand</td><td>&lt;=&gt;</td><td>Operand ... ekvivalence</td><td>právě když</td></tr>
+        </table>
 
+        <h4>Srovnávací operátory</h4>
+        <table>
+            <tr><td></td><td></td><td>Operátor.Číslo</td><td>srovnání na (Číslo) počet desetinných míst (impl. 5 míst)</td></tr>
+            <tr><td></td><td></td><td>Operátor~</td><td>lexikální porovnání (e=é=ě=E=É=Ě, r=R&lt;ř=Ř)</td></tr>
+            <tr><td>Operand</td><td>=</td><td>Operand</td><td>je rovno</td></tr>
+            <tr><td>Operand</td><td>&lt;&gt;</td><td>Operand</td><td>není rovno</td></tr>
+            <tr><td>Operand</td><td>&gt;</td><td>Operand</td><td>je větší</td></tr>
+            <tr><td>Operand</td><td>&gt;=</td><td>Operand</td><td>je větší nebo rovno</td></tr>
+            <tr><td>Operand</td><td>&lt;</td><td>Operand</td><td>je menší</td></tr>
+            <tr><td>Operand</td><td>&lt;=</td><td>Operand</td><td>je menší nebo rovno</td></tr>
+            <tr><td>Operand</td><td>in</td><td>[SeznamArgum.]</td><td>prvek množiny</td></tr>
+        </table>
+
+        <h4>Číselné operátory</h4>
+        <table>
+            <tr><td></td><td>-</td><td>Operand</td><td>unární mínus</td></tr>
+            <tr><td>Operand</td><td>+</td><td>Operand</td><td>sčítání</td></tr>
+            <tr><td>Operand</td><td>-</td><td>Operand</td><td>odčítání</td></tr>
+            <tr><td>Operand</td><td>*</td><td>Operand</td><td>násobení</td></tr>
+            <tr><td>Operand</td><td>/</td><td>Operand</td><td>dělení</td></tr>
+            <tr><td>Operand</td><td>div</td><td>Operand</td><td>celočíselné dělení</td></tr>
+            <tr><td>Operand</td><td>mod</td><td>Operand</td><td>celočíselný zbytek po dělení</td></tr>
+            <tr><td>Operand</td><td>round</td><td>Operand</td><td>zaokrouhlení na počet míst daný druhým operandem</td></tr>
+        </table>
+
+        <h4>Textové operátory</h4>
+        <table>
+            <tr><td>Operand</td><td>+</td><td>Operand</td><td>zřetězení textu</td></tr>
+        </table>
+
+        <h4>Priorita operátorů</h4>
+        <table>
+            <tr><td>1.</td><td>unární</td><td>- ^</td></tr>
+            <tr><td>2.</td><td>číselné multiplikativní</td><td>* / div mod</td></tr>
+            <tr><td></td><td>číselné ostatní</td><td>round</td></tr>
+            <tr><td>3.</td><td>číselné aditivní</td><td>+ -</td></tr>
+            <tr><td></td><td>textové aditivní</td><td>+</td></tr>
+            <tr><td>4.</td><td>srovnávací</td><td>= &lt;&gt; &gt; &gt;= &lt; &lt;=</td></tr>
+            <tr><td>5.</td><td>logické multiplikativní</td><td>&amp;</td></tr>
+            <tr><td>6.</td><td>aditivní</td><td>|</td></tr>
+            <tr><td>7.</td><td>ostatní</td><td>=&gt; &lt;=&gt;</td></tr>
+        </table>
     </li>
 
     <li>
