@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Keyb from './Keyb.svelte';
+	import Color from './Color.svelte';
 </script>
 
 <h1>PC FAND&reg</h1>
@@ -589,8 +590,91 @@
             </tr>
             <tr>
                 <td>černé</td>
-                <td>000<br>008</td><td>001<br>009</td><td>002<br>010</td><td>003<br>011</td>
-                <td>004<br>012</td><td>005<br>013</td><td>006<br>014</td><td>007<br>015</td>
+                <td><Color colors={["000", "008"]}/></td>
+                <td><Color colors={["001", "009"]}/></td>
+                <td><Color colors={["002", "010"]}/></td>
+                <td><Color colors={["003", "011"]}/></td>
+                <td><Color colors={["004", "012"]}/></td>
+                <td><Color colors={["005", "013"]}/></td>
+                <td><Color colors={["006", "014"]}/></td>
+                <td><Color colors={["007", "015"]}/></td>
+            </tr>
+            <tr>
+                <td>modré</td>
+                <td><Color colors={["016", "024"]}/></td>
+                <td><Color colors={["017", "025"]}/></td>
+                <td><Color colors={["018", "026"]}/></td>
+                <td><Color colors={["019", "027"]}/></td>
+                <td><Color colors={["020", "028"]}/></td>
+                <td><Color colors={["021", "029"]}/></td>
+                <td><Color colors={["022", "030"]}/></td>
+                <td><Color colors={["023", "031"]}/></td>
+            </tr>
+            <tr>
+                <td>zelené</td>
+                <td><Color colors={["032", "040"]}/></td>
+                <td><Color colors={["033", "041"]}/></td>
+                <td><Color colors={["034", "042"]}/></td>
+                <td><Color colors={["035", "043"]}/></td>
+                <td><Color colors={["036", "044"]}/></td>
+                <td><Color colors={["037", "045"]}/></td>
+                <td><Color colors={["038", "046"]}/></td>
+                <td><Color colors={["039", "047"]}/></td>
+            </tr>
+            <tr>
+                <td>cyan</td>
+                <td><Color colors={["048", "056"]}/></td>
+                <td><Color colors={["049", "057"]}/></td>
+                <td><Color colors={["050", "058"]}/></td>
+                <td><Color colors={["051", "059"]}/></td>
+                <td><Color colors={["052", "060"]}/></td>
+                <td><Color colors={["053", "061"]}/></td>
+                <td><Color colors={["054", "062"]}/></td>
+                <td><Color colors={["055", "063"]}/></td>
+            </tr>
+            <tr>
+                <td>červené</td>
+                <td><Color colors={["064", "072"]}/></td>
+                <td><Color colors={["065", "073"]}/></td>
+                <td><Color colors={["066", "074"]}/></td>
+                <td><Color colors={["067", "075"]}/></td>
+                <td><Color colors={["068", "076"]}/></td>
+                <td><Color colors={["069", "077"]}/></td>
+                <td><Color colors={["070", "078"]}/></td>
+                <td><Color colors={["071", "079"]}/></td>
+            </tr>
+            <tr>
+                <td>fialové</td>
+                <td><Color colors={["080", "088"]}/></td>
+                <td><Color colors={["081", "089"]}/></td>
+                <td><Color colors={["082", "090"]}/></td>
+                <td><Color colors={["083", "091"]}/></td>
+                <td><Color colors={["084", "092"]}/></td>
+                <td><Color colors={["085", "093"]}/></td>
+                <td><Color colors={["086", "094"]}/></td>
+                <td><Color colors={["087", "095"]}/></td>
+            </tr>
+            <tr>
+                <td>hnědé</td>
+                <td><Color colors={["096", "104"]}/></td>
+                <td><Color colors={["097", "105"]}/></td>
+                <td><Color colors={["098", "106"]}/></td>
+                <td><Color colors={["099", "107"]}/></td>
+                <td><Color colors={["100", "108"]}/></td>
+                <td><Color colors={["101", "109"]}/></td>
+                <td><Color colors={["102", "110"]}/></td>
+                <td><Color colors={["103", "111"]}/></td>
+            </tr>
+            <tr>
+                <td>šedé</td>
+                <td><Color colors={["112", "120"]}/></td>
+                <td><Color colors={["113", "121"]}/></td>
+                <td><Color colors={["114", "122"]}/></td>
+                <td><Color colors={["115", "123"]}/></td>
+                <td><Color colors={["116", "124"]}/></td>
+                <td><Color colors={["117", "125"]}/></td>
+                <td><Color colors={["118", "126"]}/></td>
+                <td><Color colors={["119", "127"]}/></td>
             </tr>
         </table>
     </li>
